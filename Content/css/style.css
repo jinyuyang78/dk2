@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* 初始化CSS */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+img{display: block;width: 100%}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family:"微软雅黑";}
+input::-moz-focus-inner { border:none; padding:0; }
+select, input { vertical-align:middle; }
+select, input, textarea { margin:0;     border: none; font-family:"微软雅黑";font-size: 12px}
+input[type="text"],input[type="tel"], textarea,select { outline-style:none; -webkit-tap-highlight-color: transparent;}
+textarea { resize:none; }
+table { border-collapse:collapse; }
+body {
+    font: 14px "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,"Microsoft YaHei";
+    color: #444450;
+    -webkit-user-select: text;
+}
+a {text-decoration:none; outline:none;}
+a:visited {}
+a:hover, a:active, a:focus {text-decoration:none; }
+a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+.fl{ float:left;}
+.fr{ float:right;}
+.pr{ position:relative;}
+.pa{ position:absolute;}
+.dn{ display:none;}
+.db{ display:block;}
+.hidden{visibility:hidden;}
+.list_lh li:before{
+    content: "";
+}
+/* CSS 1,2 & 3 and HTML5 reset stylesheet */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* 重置所有元素的盒模型 */
+textarea { resize: none; }
+
+/*  HTML5 CSS */
+article, aside, audio, footer, header, nav, section, video { display: block }
+/* 对于老的浏览器，如Firefox 3.6，由于不知道HTML5元素而将它们渲染为 display: inline 。这里不用管 date, figure和HTML5表单的input*/
+input{border:0;outline:none;/*去除蓝色边框*/}
+input[type="search"]{-webkit-appearance:textfield;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+input {-webkit-appearance:none; /*去除input默认样式*/}
+/* 去除Safari 或 Mobile Safari浏览器的HTML5搜索框和提交按钮的 OS X外观 */
+
+.wrap{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.seabox{
+    width: 100%;
+    height: 40px;
+}
+.seabox .seainput{
+    width: 100%;
+    height: 40px;
+    background: url("../imgs/search.png") no-repeat  10px center;
+    background-size: 20px;
+    padding-left: 34px;
+    color: #222222;
+}
+.jktop{
+    width: 100%;
+}
+.jktop img{
+    width: 100%;
+}
+.box{ width:100%;padding: 5px 0}
+.bcon{ width: 100%}
+.bcon h1{ border-bottom:1px solid #eee; padding:0 10px;}
+.bcon h1 b{ font:bold 14px/40px '宋体'; border-top:2px solid #3492D1; padding:0 8px; margin-top:-1px; display:inline-block;}
+
+.list_lh{ height:34px; overflow:hidden;}
+.list_lh li{ padding:5px 10px;overflow: hidden}
+.list_lh li.lieven{ background:#F0F2F3;}
+.list_lh li p{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+.list_lh li:before{
+    width: 40px;
+    display: block;
+    height: 40px;
+    background:url("../imgs/lb.png") no-repeat center;
+    background-size: 30px;
+    float: left;
+}
+.btm p{ font:normal 12px/24px 'Microsoft YaHei'; text-align:center;}
+.btnbox{
+    width: 18rem;
+    margin: 15px auto;
+    overflow: hidden;
+}
+.btnbox .btn{
+    width: 49.9%;
+    float: left;
+    padding-top: 4.5rem;
+    text-align: center;
+    color: #57bbb1;
+}
+.btnbox .wydk{
+    background:url("../imgs/wyjk.png") no-repeat top center;
+    background-size: 4.5rem;
+    border-right: 1px solid #d1d1d1;
+}
+.btnbox .jyjl{
+    background:url("../imgs/jyjl.png") no-repeat top center;
+    background-size: 4.5rem;
+}
+.cjrbox{
+
+}
+.cjrbox .cjrnum{
+    color: #bbbbbb;
+    font-size: .8rem;
+    padding-left: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 8px;
+}
+.jkrlist li{
+    padding:10px;
+    border-bottom: 1px solid #d1d1d1;
+    overflow: hidden;
+    font-size: .9rem;
+    height: 51px;
+
+}
+.jkrlist li p{
+    width: 6rem;
+    float: left;
+    line-height: 30px;
+    color: #bbbbbb;
+
+}
+.jkrlist li .cjrxx{
+    width: 6rem;
+    float: left;
+    text-align: center;
+    color: #1d1d1d;
+}
+.jkrlist li .cjrxx img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    float: left;
+}
+.jkrlist li a.jkbtn{
+    float: right;
+    border: 1px solid #57bbb1;
+    color: #57bbb1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin: 2px 0;
+}
+.jkrlist li .cjrxx span{
+    float: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
