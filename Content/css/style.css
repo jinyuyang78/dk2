@@ -126,7 +126,7 @@ input {-webkit-appearance:none; /*去除input默认样式*/}
     padding:10px;
     border-bottom: 1px solid #d1d1d1;
     overflow: hidden;
-    font-size: .9rem;
+    font-size: .8rem;
     height: 51px;
 
 }
